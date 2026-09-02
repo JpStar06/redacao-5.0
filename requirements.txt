@@ -1,0 +1,4 @@
+PyAutoGUI
+customtkinter
+pynput
+CTkMessagebox
