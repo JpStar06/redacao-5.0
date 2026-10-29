@@ -29,7 +29,7 @@ class MainTabView(ctk.CTkTabview):
         self.ConfigSpeedWriteLabael.grid(row=0, column=0, padx=(20, 10), pady= 20, sticky="w")
         self.ConfigSpeedWriteEntry = ctk.CTkEntry(master=self.tab("Config"), fg_color="transparent")
         self.ConfigSpeedWriteEntry.grid(row= 0, column=1, padx=(0, 20), pady=20, sticky="w")
-        self.ConfigCaptureClickButton = ctk.CTkButton(master=self.tab("Config"), text="Capturar Posição do Clique", command=self._handle_button_press, **CommunButton)
+        self.ConfigCaptureClickButton = ctk.CTkButton(master=self.tab("Config"), text="Capturar Posição do Clique", command=self.HandleButtonPress, **CommunButton)
         self.ConfigCaptureClickButton.grid(row=1, column=0, columnspan=2, padx=(20, 10), pady=10, sticky="w")
         self.ConfigStatusClickLabel = ctk.CTkLabel(master=self.tab("Config"), text=f"(X:  | Y: )", font=("Segoe UI", 20, "bold"))
         self.ConfigStatusClickLabel.grid(row=1, column=1, columnspan=2, padx=(0, 20), pady=5, sticky="w")
